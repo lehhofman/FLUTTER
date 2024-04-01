@@ -1,0 +1,25 @@
+						INTALANDO FLUTTER:
+
+1. Baixe o Flutter:
+
+-> Acesse o site oficial do Flutter em flutter.dev.
+-> Clique em Get Started e selecione "Windows" como seu sistema operacional.
+-> Baixe o arquivo ZIP contendo o Flutter SDK.
+
+2. Extrair o Flutter:
+
+-> Extraia o conteúdo do arquivo ZIP para um diretório  C:\flutter.
+
+3. Configurar as Variáveis de Ambiente:
+
+-> Configurações Avançadas do Sistema 
+-> Variáveis de Ambiente 
+-> Variáveis do Sistema 
+-> Path 
+-> Editar.
+-> Adicione o caminho completo para o diretório bin do Flutter (C:\flutter\bin).
+
+4. Verificar a Instalação do Flutter:
+
+-> Abra o Prompt de Comando (cmd) 
+-> Execute o comando flutter doctor.

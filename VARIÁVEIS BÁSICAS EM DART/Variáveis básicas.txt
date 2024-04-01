@@ -1,0 +1,33 @@
+
+VARIAVEIS BÁSICAS DE DART:
+
+o que é uma variavel: local que armazena informação
+
+todas as variaveis possuem um nome unico, de preferencia com nome que referencia o conteudo
+
+pode armazenar ler e modificar 
+
+como funciona variaveis em dart: 
+
+variavel de numero inteiro: int idade = 18;
+
+int = variavel / idade = nome da variavel / 18 =  valor da variavel 
+
+variavel para texto: String : String nome = 'Leticia';
+
+String = variavel / nome = nome da variavel / Leticia =  valor da variavel
+
+Variável para numero com casa decimal: double :   double distancia = 10.80;
+
+double = variavel / distancia = nome da variavel / 10.80 =  valor da variavel
+
+Para exibir o conteudo utiliza print
+
+  print(idade);
+  print(nome);
+  print(distancia);
+
+exemplo modificando idade:
+
+  idade = 31;
+  print(idade);

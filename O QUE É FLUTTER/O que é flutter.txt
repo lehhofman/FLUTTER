@@ -1,0 +1,15 @@
+						O QUE É FLUTTER: 	
+
+-> Flutter é um framework de desenvolvimento de aplicativos móveis criado pelo Google.
+
+-> Ele permite que os desenvolvedores construam aplicativos nativos de alta qualidade para iOS, Android e web a partir de um único código-base. 
+
+1. Widgets: O Flutter utiliza widgets como blocos de construção fundamentais para criar interfaces de usuário. Os widgets são personalizáveis e podem ser combinados para criar layouts complexos e belos.
+
+2. Desempenho: Flutter oferece desempenho de alto nível através de sua própria engine de renderização, chamada de Skia, proporcionando uma experiência de usuário suave e responsiva.
+
+3. Design Bonito e Nativo: Os aplicativos Flutter têm uma aparência nativa em todas as plataformas, graças aos seus widgets personalizados que se adaptam automaticamente aos estilos visuais específicos de cada sistema operacional.
+
+4. Acesso a Recursos Nativos: Flutter oferece acesso a APIs nativas de dispositivos, permitindo que os desenvolvedores integrem facilmente recursos como câmera, GPS, sensores e muito mais aos seus aplicativos.
+
+5. Suporte à Web: Além de iOS e Android, o Flutter também tem suporte para o desenvolvimento web, permitindo que os desenvolvedores criem aplicativos para navegadores modernos usando o mesmo código-base.
