@@ -1,0 +1,62 @@
+app contador:
+
+introduçao aos widgets do flutter
+
+todos os componentes são widgets
+
+widgets da tela
+
+botao e texto
+
+estrutura da tela
+
+botoes na horizontal 
+e textos na vertical
+
+widgets texto
+widgets texto
+texto na vertical - widgets coluna -> colums
+
+botao classe ( widgets)  pai
+texto do botao ( widgets) classe filho
+botoes na horizontal = widgets de alinhamento - linha - > ROW 
+
+column
+text
+text
+row
+button
+text
+button
+text
+
+Container, MaterialApp e Text
+
+import 'package:flutter/material.dart';
+void main() {
+  runApp(
+    MaterialApp(
+      home: Container(
+        color: Colors.yellow,
+      ),
+    ),
+  );
+}
+
+MaterialApp - parametros de de customização
+
+runApp = importa biblioteca
+
+Container = caixa
+
+sempre que finalizar um parametro utiliza virgula
+
+ctrl + alt + l
+
+build para sobreescrever o código e em cima @override
+
+atalho stless para criar esse código
+
+pagina inicial 
+
+

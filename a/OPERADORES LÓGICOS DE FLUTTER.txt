@@ -1,0 +1,61 @@
+OPERADORES LÓGICOS DE FLUTTER:
+
+
+Operador AND = ele exibe que é verdadeiro somente se as duas verificações forem verdadeiras
+Operador OR  = ele exibe que é verdadeiro se uma for das opções forem verdadeiras
+Operador 
+AND = &&
+OR = ||
+--------------------------------------------------------------
+
+comparações com numeros
+
+se os valores são iguais ==
+
+void main() {
+	int n = 10;
+	print(n == 15);
+	
+}
+
+
+--------------------------------------------------------------
+
+varivel bool = true ou false
+
+void main() {
+	int n = 10;
+	bool r = n == 15;
+	print(r);
+	
+}
+
+--------------------------------------------------------------
+
+diferença: != 
+maior ou igual : >=
+menor ou igual: <=
+maior : >
+menor: <
+igual: ==
+
+--------------------------------------------------------------
+
+para fazer duas verificações ao mesmo tempo utiliza : 
+
+&& = boll r = n <= n2 && n>= 10;
+
+void main() {
+	bool r = 10 <= 5 && 40 >= 10;
+	print(r);
+}
+
+
+|| = boll r = n || n2 && n|| 10;
+
+void main() {
+	bool r = 10 || && 40 || 10;
+	print(r);
+}
+
+
