@@ -1,0 +1,33 @@
+OPERADORES ARITIMÉTICOS EM DART:
+
+- subtração
+{ + }  adição
+{ * }  multiplicação
+{ / }  divisão
+
+exemplo em execução:
+
+void main() {
+
+  double n1 = 10.5;
+  double n2 = 47.9;
+  
+  double r1 = n1 * n2;
+  print(r1);
+
+}
+
+( ) sempre é a preferencia da operação quando se faz mais de uma.
+
+para crescentar ou retir um valor da variavel é:   n1 = n1 + 10;
+
+n1 *= 10 -> multiplica o valor da variavel
+
+operação de reto de divisão = print(n3 / 2);
+
+inclementa = n1++
+desencrementa = n1--
+
+
+
+
