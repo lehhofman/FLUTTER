@@ -1,91 +1,141 @@
-import 'package:flutter/material.dart'; // Importa o pacote flutter/material.dart, que contém os widgets e funcionalidades do Flutter para construir interfaces de usuário.
+import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp()); // Inicia a execução do aplicativo Flutter, passando uma instância de MyApp como widget raiz.
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget { // Define a classe MyApp, que é um widget StatelessWidget, ou seja, não mantém estado interno.
-  const MyApp({Key? key}) : super(key: key); // Construtor de MyApp que recebe uma chave opcional, repassando a chave para o construtor da superclasse.
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) { // Sobrescreve o método build para retornar a interface de usuário do aplicativo.
-    return MaterialApp( // Retorna um MaterialApp, que é um widget que configura a aparência do aplicativo.
-      home: HomePage(), // Configura a página inicial do aplicativo para ser HomePage.
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
     );
   }
 }
 
-class HomePage extends StatelessWidget { // Define a classe HomePage, que é um widget StatelessWidget.
-  HomePage({Key? key}) : super(key: key); // Construtor de HomePage que recebe uma chave opcional, repassando a chave para o construtor da superclasse.
+class HomePage extends StatefulWidget {
+  HomePage({Key? key}) : super(key: key);
 
-  int count = 0; // Declara uma variável para armazenar um contador.
+  @override
+  _HomePageState createState() => _HomePageState();
+}
 
-  void decrement() { // Define um método para decrementar o contador e exibir o valor atual.
-    count--;
-    print(count);
+class _HomePageState extends State<HomePage> {
+  int count = 0;
+
+  void decrement() {
+    setState(() {
+      count--;
+      _showMessages("Que Pena :(");
+    });
   }
 
-  void increment() { // Define um método para incrementar o contador e exibir o valor atual.
-    count++;
-    print(count);
+  void increment() {
+    setState(() {
+      count++;
+      _showMessage("Bem Vindo :)");
+    });
+  }
+
+  void _showMessage(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: Colors.lightGreenAccent,
+        content: Text(
+          message,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black45,
+            fontSize: 26,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        duration: Duration(seconds: 1),
+      ),
+    );
+  }
+
+  void _showMessages(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        backgroundColor: Colors.redAccent,
+        content: Text(
+          message,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.black45,
+            fontSize: 26,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        duration: Duration(seconds: 1),
+      ),
+    );
   }
 
   @override
-  Widget build(BuildContext context) { // Sobrescreve o método build para retornar a interface de usuário da página inicial.
-    return Scaffold( // Retorna um Scaffold, que é um layout de página básico do Material Design.
-      backgroundColor: Colors.deepPurple, // Configura a cor de fundo do Scaffold como roxo profundo.
-      body: Column( // Define o corpo do Scaffold como uma coluna de widgets.
-        mainAxisAlignment: MainAxisAlignment.center, // Alinha os filhos verticalmente ao centro da coluna.
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text( // Adiciona um widget de texto à coluna.
-            'Pode entrar!', // Define o texto a ser exibido.
-            style: TextStyle( // Aplica estilos ao texto.
-                fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold), // Configurações de estilo do texto.
-          ),
-          const SizedBox(height: 32), // Adiciona um espaço vertical entre os widgets.
-          Text( // Adiciona outro widget de texto à coluna para exibir o valor do contador.
-            '$count', // Exibe o valor atual do contador.
-            style: TextStyle( // Aplica estilos ao texto.
-              fontSize: 100, // Configura o tamanho da fonte.
-              color: Colors.white, // Configura a cor do texto.
+          Text(
+            'CONTADOR',
+            style: TextStyle(
+              fontSize: 40,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 32), // Adiciona mais um espaço vertical entre os widgets.
-          Row( // Adiciona uma linha de widgets.
-            mainAxisAlignment: MainAxisAlignment.center, // Alinha os filhos horizontalmente ao centro da linha.
+          const SizedBox(height: 32),
+          Text(
+            '$count',
+            style: TextStyle(
+              fontSize: 100,
+              color: Colors.cyan,
+            ),
+          ),
+          const SizedBox(height: 32),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextButton( // Adiciona um botão de texto à linha para decrementar o contador.
-                onPressed: decrement, // Define a função a ser executada quando o botão é pressionado.
-                style: TextButton.styleFrom( // Define o estilo do botão.
-                  backgroundColor: Colors.white, // Define a cor de fundo do botão como branca.
-                  fixedSize: const Size(90, 80), // Define o tamanho fixo do botão.
-                  shape: RoundedRectangleBorder( // Define a forma do botão como um retângulo com bordas arredondadas.
-                    borderRadius: BorderRadius.circular(24), // Define o raio do arredondamento das bordas do retângulo.
+              TextButton(
+                onPressed: decrement,
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.redAccent,
+                  fixedSize: const Size(100, 80),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24),
                   ),
                 ),
-                child: Text( // Adiciona o texto "Saiu" ao botão.
-                  'Saiu',
-                  style: TextStyle( // Aplica estilos ao texto do botão.
-                    color: Colors.black, // Configura a cor do texto.
-                    fontSize: 16, // Configura o tamanho da fonte.
+                child: Text(
+                  'Sair',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 16,
                   ),
                 ),
               ),
-              SizedBox(width: 64), // Adiciona um espaço horizontal entre os botões.
-              TextButton( // Adiciona outro botão de texto à linha para incrementar o contador.
-                onPressed: increment, // Define a função a ser executada quando o botão é pressionado.
-                style: TextButton.styleFrom( // Define o estilo do botão.
-                  backgroundColor: Colors.white, // Define a cor de fundo do botão como branca.
-                  fixedSize: const Size(90, 80), // Define o tamanho fixo do botão.
-                  shape: RoundedRectangleBorder( // Define a forma do botão como um retângulo com bordas arredondadas.
-                    borderRadius: BorderRadius.circular(24), // Define o raio do arredondamento das bordas do retângulo.
+              SizedBox(width: 64),
+              TextButton(
+                onPressed: increment,
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.lime,
+                  fixedSize: const Size(100, 80),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24),
                   ),
                 ),
-                child: Text( // Adiciona o texto "Entrou" ao botão.
-                  'Entrou',
-                  style: TextStyle( // Aplica estilos ao texto do botão.
-                    color: Colors.black, // Configura a cor do texto.
-                    fontSize: 16, // Configura o tamanho da fonte.
+                child: Text(
+                  'Entrar',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ),
               ),
