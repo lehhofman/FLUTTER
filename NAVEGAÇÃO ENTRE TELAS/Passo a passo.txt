@@ -1,0 +1,24 @@
+Definir a estrutura do aplicativo:
+
+Crie um novo projeto Flutter.
+Defina a estrutura geral do aplicativo no método main() usando runApp() para iniciar o aplicativo com a classe MyApp.
+Criar a página de login:
+
+Crie uma classe StatefulWidget para a página de login (LoginPage).
+Adicione um formulário com campos para e-mail e senha.
+Valide os campos do formulário para garantir que não estejam vazios.
+Implemente uma função de login para verificar as credenciais inseridas.
+Navegue para a página inicial (HomePage) se as credenciais estiverem corretas; caso contrário, exiba um AlertDialog informando ao usuário sobre as credenciais inválidas.
+Criar a página inicial:
+
+Crie outra classe StatefulWidget para a página inicial (HomePage).
+Defina um contador e dois botões para incrementar e decrementar o contador.
+Implemente funções para incrementar e decrementar o contador, atualizando a interface do usuário conforme necessário.
+Exiba mensagens na interface do usuário quando o contador é alterado.
+Estilizar a interface do usuário:
+
+Adicione estilos aos elementos da interface do usuário, como botões, campos de texto e barra de navegação.
+Utilize cores e fontes que complementem o design geral do aplicativo.
+Testar e depurar:
+
+Teste o aplicativo em diferentes dispositivos e resoluções para garantir que a interface do usuário seja responsiva.

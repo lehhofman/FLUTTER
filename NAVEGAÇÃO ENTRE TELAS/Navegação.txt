@@ -1,0 +1,8 @@
+Para Navegação utiliza:
+
+- Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomePage()),
+      ); 
+
+esse código vai navegar para a página HomePage.
