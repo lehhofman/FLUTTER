@@ -1,4 +1,4 @@
-# Repositório de Estudo de Flutter e Dart
+# 💻 Repositório de Estudo de Flutter e Dart
 
 Este repositório foi criado com o propósito de auxiliar no estudo e prática de desenvolvimento utilizando Flutter e Dart. Aqui você encontrará uma variedade de exemplos, projetos e recursos para ajudar no aprendizado dessas tecnologias.
 
