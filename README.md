@@ -1,12 +1,12 @@
-# 💙 [Flutter](https://flutter.dev/)
+# Repositório de Estudo de Flutter e Dart
+
+Este repositório foi criado com o propósito de auxiliar no estudo e prática de desenvolvimento utilizando Flutter e Dart. Aqui você encontrará uma variedade de exemplos, projetos e recursos para ajudar no aprendizado dessas tecnologias.
+
+## 💙 [Flutter](https://flutter.dev/)
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="200" alt="Flutter Logo">
 </p>
-
-# Repositório de Estudo de Flutter e Dart
-
-Este repositório foi criado com o propósito de auxiliar no estudo e prática de desenvolvimento utilizando Flutter e Dart. Aqui você encontrará uma variedade de exemplos, projetos e recursos para ajudar no aprendizado dessas tecnologias.
 
 ## 💡 Por que estudar Flutter e Dart?
 
