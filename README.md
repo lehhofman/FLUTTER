@@ -4,7 +4,7 @@ Este repositório foi criado com o propósito de auxiliar no estudo e prática d
 
 ## 💙 [Flutter](https://flutter.dev/)
 
-<p align="center" style="margin-left: 200px;">
+<p style="margin-left: 200px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="500" alt="Flutter Logo">
 </p>
 
