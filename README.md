@@ -6,9 +6,9 @@ Este repositório foi criado com o propósito de auxiliar no estudo e prática d
 
 O repositório está organizado da seguinte forma:
 
-- **/exemplos**: Contém exemplos simples e práticos de conceitos chave do Flutter e Dart.
-- **/projetos**: Projetos mais complexos que exploram aplicações reais utilizando Flutter e Dart.
-- **/recursos**: Links úteis, artigos, vídeos e outros recursos para aprofundar o conhecimento sobre Flutter e Dart.
+- **Exemplos**: Contém exemplos simples e práticos de conceitos chave do Flutter e Dart.
+- **Projetos**: Projetos mais complexos que exploram aplicações reais utilizando Flutter e Dart.
+- **Recursos**: Links úteis, artigos, vídeos e outros recursos para aprofundar o conhecimento sobre Flutter e Dart.
 
 ## Como Contribuir
 
