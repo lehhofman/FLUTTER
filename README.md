@@ -1,10 +1,14 @@
-# Repositório de Estudo de Flutter
+# Repositório de Estudo de Flutter e Dart
 
 Este repositório foi criado com o propósito de auxiliar no estudo e prática de desenvolvimento utilizando Flutter e Dart. Aqui você encontrará uma variedade de exemplos, projetos e recursos para ajudar no aprendizado dessas tecnologias.
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png" width="200" alt="Flutter Logo">
+</p>
+
 ## 💙 [Flutter](https://flutter.dev/)
 
-![Flutter Logo](https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png)
+Flutter é um SDK de código aberto criado pelo Google para desenvolver aplicativos para dispositivos móveis, web e desktop com uma única base de código. Ele usa a linguagem de programação Dart, que é simples e eficiente.
 
 
 ## 💡 Por que estudar Flutter e Dart?
