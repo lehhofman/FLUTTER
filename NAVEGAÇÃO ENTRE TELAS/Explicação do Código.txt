@@ -1,0 +1,38 @@
+
+Iniciar uma apicação em flutter = runApp(MyApp());
+
+Uma classe que representa a aplicação ao todo = StatelessWidget
+
+Definir uma pág inicial = home: LoginPage(),
+
+Lida com o estado = StatefulWidget
+
+Estado de uma página = State
+
+Chave global = GlobalKey
+
+Referencia a chave global = GlobalKey<...>();
+
+Controle para campos como email e senha = final _.... TextEditingController();
+
+Controi Interface da pagina = build(BuildContext context)
+
+associar chave global a formulario = key: _formKey,
+
+Adicionar campo de entrada = TextFormField
+
+Adicionar validação = validator: ()
+
+Adicionar validação a um formulario: (_formkey.currentState!.validate())
+
+Navegação para outra tela: Navigator.pushReplacement
+
+Mensagem de erro exibida: showDialog
+
+Função para decrementar: decrement / count--
+
+Função para incrementar: increment / count++
+
+Exibir mensagem na parte inferior da tela: _showMessages(String message)
+
+Para navegar para tela anterior: ElevatedButton -> Navigator.pushReplacement 
