@@ -1,0 +1,28 @@
+Classe ApiConstants:
+Define a URL base da API utilizada para consultar informações de endereço com base no CEP.
+Classe PathAssets:
+Define o caminho para o arquivo de imagem do ícone de localização.
+Classe HomeController:
+Controla a lógica da tela inicial da aplicação.
+Utiliza o serviço ApiService para obter dados de endereço.
+Gerencia o estado de carregamento e os dados de endereço através de ValueNotifier.
+Método searchAddress: busca um endereço com base no CEP fornecido e atualiza o estado conforme necessário.
+Método clear: limpa os dados de endereço e o estado de carregamento.
+Classe AddressModel:
+Define o modelo de dados para representar um endereço.
+Inclui atributos como cep, logradouro, complemento, bairro, localidade, uf, ibge e ddd.
+Implementa métodos para converter de/para JSON.
+Classe CardLocationWidget:
+Widget para exibir as informações de um endereço em um cartão.
+Recebe um modelo de endereço como parâmetro e exibe suas informações.
+Classe HomeScreen:
+Exibe a tela inicial da aplicação.
+Contém um campo de texto para inserir o CEP e um botão para consultar.
+Exibe um indicador de carregamento durante a busca de endereço.
+Mostra as informações do endereço em um cartão quando disponíveis.
+Classe ApiService:
+Realiza solicitações HTTP à API ViaCEP para obter dados de endereço.
+Utiliza a biblioteca Dio para fazer as solicitações.
+Configuração da Aplicação (main.dart):
+Configura o tema e a tela inicial da aplicação.
+Utiliza a classe MaterialApp para configurar a aplicação Flutter.
