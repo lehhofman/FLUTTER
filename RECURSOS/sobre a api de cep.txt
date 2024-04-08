@@ -19,7 +19,7 @@ modelo =
       "gia": "1004",
       "ddd": "11",
       "siafi": "7107"
-    }
+}
 
 convertendo o modelo acima em dados dart =
 

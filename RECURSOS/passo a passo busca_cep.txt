@@ -1,16 +1,8 @@
-Passo a passo para criar uma aplicação de consulta de CEP:
 
-Definir a URL base da API:
-
-Utilizar a classe ApiConstants para definir a URL base da API, que no caso é "https://viacep.com.br/ws/$cep/json/".
-Definir o caminho para os ativos (assets):
 
 Utilizar a classe PathAssets para definir o caminho para os ativos (assets), como por exemplo o ícone de localização.
 Criar a classe de modelo de endereço (AddressModel):
 
-Definir os atributos do modelo de endereço, como cep, logradouro, complemento, bairro, localidade, uf, ibge, ddd, etc.
-Implementar métodos para converter de/para JSON.
-Criar o widget para exibir o endereço (CardLocationWidget):
 
 Implementar um widget que recebe um modelo de endereço como parâmetro e exibe suas informações em um cartão.
 Criar a classe de controle da tela inicial (HomeController):
