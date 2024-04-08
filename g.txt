@@ -1,0 +1,44 @@
+
+					RESUMO API DE CEP:
+
+-> Api utilizada = https://viacep.com.br/
+
+ Essa Api através do cep ela retorna: logadouro, complementp, bairro, localidade, uf, ibge e ddd.
+
+-> Podemos utilizar http ou dio para requisição, nesse modelo utiizamos diu.
+
+ import 'package:dio/dio.dart';
+
+-> Temos que converter o json para dart, para isso utilizamos o site abaixo:
+
+ https://javiercbk.github.io/json_to_dart/
+
+-> Agora passo a passo do código:
+
+ - Definir a URL base da API = Classe ApiConstants
+
+ 	-> Definindo a URL base podemos utilizar para consultar informações de endereço com base no cep.
+
+	-> "https://viacep.com.br/ws/$cep/json/"
+
+ - Definir o caminho para o arquivo da imagem = Classe PathAssets
+
+	-> Define o caminho para os arquivos assets, como o icone que utilizamos.
+	
+	-> "assets/location-pin.png"
+
+ - Definir os atributos do modelo de endereço = CardLocationWidget
+
+	-> Widget = Exibe as informações de um endereço em um card.
+
+	-> Text("Logradouro: ${address?.logradouro}")
+
+ - Definir o controle de lógica da tela inicial = ApiService
+
+	-> Controla a lógica da tela inicial da aplicação
+
+	-> Utiliza o serviço ApiService para obter dados de endereço
+
+	-> Gerencia o estado de carregamento dos ddos atraves do = ValueNotifier
+
+- 
