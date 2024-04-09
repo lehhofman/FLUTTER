@@ -1,0 +1,11 @@
+api clima tempo = OpenWeatherMap
+
+-> import 'package:weather/weather.dart';
+
+-> WeatherFactory wf = new WeatherFactory("chave")
+
+- chave = https://openweathermap.org/price
+
+clima através da cidade :
+
+-> Weather w = await wf.currentWeatherByCityName(cidade);
