@@ -41,4 +41,15 @@
 
 	-> Gerencia o estado de carregamento dos ddos atraves do = ValueNotifier
 
-- 
+- Buscar endereço com base no cep = searchAddress
+
+---------------------------------------------------------------------------------
+
+ 	-> Método clear = Limpa os dados de endereço e estado de carregamento
+
+	-> Classe AddressModel:
+
+	- Define o modelo de dados para representar um endereço.
+	- Inclui atributos como cep, logradouro, complemento, bairro, localidade, uf, ibge e ddd.
+	- Implementa métodos para converter de/para JSON.
+
